@@ -1,0 +1,121 @@
+.MainCard_cont {
+  width: 95%;
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: auto;
+  gap: 5rem;
+  margin-top: 5rem;
+  padding: 2rem;
+}
+.Card_cont {
+  height: auto;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 20px;
+  margin: auto;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.Card_cont:hover {
+  box-shadow: rgba(17, 12, 46, 0.082) 0px 48px 100px 0px;
+}
+.img_cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+  width: 18.75rem;
+  height: 18.75rem;
+  overflow: hidden;
+}
+.img_cont > img {
+  width: 50%;
+  height: 60%;
+  transition: all 0.3s ease;
+}
+.img_cont > img:hover {
+  transform: scale(1.2);
+}
+.Details_cont {
+  text-align: left;
+  text-decoration: none;
+  color: black;
+}
+.Review_div {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+}
+.btn_div {
+  /* border: 1px solid red; */
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: auto;
+}
+.btn_div > button {
+  padding: 10px;
+  border-radius: 10px;
+  border: transparent;
+  background-color: #007bff;
+  color: white;
+}
+
+.btn_div > button:hover {
+  background-color: rgb(58, 58, 58);
+  cursor: pointer;
+}
+
+/*============== MEDIA QUERIES (MEDIUN DEVICES) ============ */
+@media screen and (max-width: 1024px) {
+  .MainCard_cont {
+    width: 100%;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    padding: 0;
+    gap: 40px 20px;
+    margin-top: 60px;
+  }
+  .Card_cont {
+    width: 80%;
+    height: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    padding: 1rem;
+    border-radius: 20px;
+    margin: auto;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  .img_cont > img {
+    width: 50%;
+  }
+}
+
+/*============== MEDIA QUERIES (SMALL DEVICES) ============ */
+@media screen and (max-width: 600px) {
+  .MainCard_cont {
+    width: 95%;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+    gap: 40;
+    padding: 0;
+    margin-top: 60px;
+  }
+  .Card_cont {
+    width: 90%;
+    /* border: 1px solid red; */
+    padding: 1rem;
+  }
+  .img_cont > img {
+    width: 50%;
+  }
+}

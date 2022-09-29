@@ -1,0 +1,98 @@
+.SingleCard_cont {
+  width: 50%;
+  /* border: 1px solid red; */
+  height: auto;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  margin-top: 6rem;
+}
+.SingleCard_cont:hover {
+ 
+  box-shadow: rgba(17, 12, 46, 0.082) 0px 48px 100px 0px;
+}
+.Singleimg_cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+  width: 18.75rem;
+  height: 18.75rem;
+  overflow: hidden;
+}
+.Singleimg_cont > img {
+  width: 50%;
+  height: 60%;
+  transition: all 0.3s ease;
+}
+.Singleimg_cont > img:hover {
+  transform: scale(1.2);
+}
+.Details_cont {
+  text-align: left;
+  text-decoration: none;
+  color: black;
+}
+.Review_div {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+}
+.singlePage_btn {
+  /* border: 1px solid red; */
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: auto;
+}
+.singlePage_btn > button {
+  padding: 10px;
+  border-radius: 10px;
+  border: transparent;
+  background-color: #007bff;
+  color: white;
+}
+
+.singlePage_btn > button:hover {
+  background-color: rgb(58, 58, 58);
+  cursor: pointer;
+}
+
+/*============== MEDIA QUERIES (MEDIUN DEVICES) ============ */
+@media screen and (max-width: 1024px) {
+  .MainCard_cont {
+    width: 80%;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    gap: 40px;
+    margin-top: 60px;
+  }
+  .img_cont > img {
+    width: 50%;
+  }
+}
+
+/*============== MEDIA QUERIES (SMALL DEVICES) ============ */
+@media screen and (max-width: 600px) {
+  .MainCard_cont {
+    width: 90%;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+    gap: 40px;
+    margin-top: 60px;
+  }
+  .img_cont > img {
+    width: 50%;
+  }
+}

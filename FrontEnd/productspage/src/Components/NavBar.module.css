@@ -1,0 +1,22 @@
+.active {
+  color: red;
+  text-decoration: none;
+  margin: 1.5rem 2rem;
+}
+.default {
+  color: white;
+  text-decoration: none;
+  margin: 1.5rem 2rem;
+}
+.NavDiv {
+  display: flex;
+  justify-content: center;
+  background-color: #06283d;
+  /* border: 1px red solid; */
+  margin-bottom: 3rem;
+  text-align: center;
+  width: 100%;
+  position: sticky;
+  top: 0px;
+  z-index: 999;
+}
